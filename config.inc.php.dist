@@ -6,12 +6,12 @@ define('USER', 'guest');
 define('PASS', 'guest');
 define('VHOST', '');
 
-define('MEDIA_NAME', '');
+define('MEDIA_NAME', 'mtt');
 define('MEDIA_STORAGE_PATH', '');
-define('MEDIA_STORAGE_TYPE', '');
-define('MEDIA_STRATEGY', '');
+define('MEDIA_STORAGE_TYPE', 'filesystem');
+define('MEDIA_STRATEGY', 'CanalTP\MediaManager\Strategy\DefaultStrategy');
 
-define('LOG_PATH', '');
+define('LOG_PATH', '/tmp');
 
 //If this is enabled you can see AMQP output on the CLI
 // define('AMQP_DEBUG', true);

@@ -14,3 +14,13 @@ Requirements
 -------------
 
 rabbitmq-server
+
+Launch
+-----
+you can launch this worker with this commande below
+
+``` php
+
+php pdfGenerationWorker.php name 1
+
+```

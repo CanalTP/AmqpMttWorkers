@@ -17,7 +17,7 @@ rabbitmq-server
 
 Launch
 -----
-you can launch this worker with this commande below
+in the folder web you can launch this worker with this commande below
 
 ``` php
 

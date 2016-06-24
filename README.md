@@ -17,7 +17,7 @@ rabbitmq-server
 
 Launch
 -----
-in the web folder you can launch this worker with this commande below
+in the web folder you can launch this worker with this command below
 
 ```
 $> php pdfGenerationWorker.php [file name log] [number of trials]

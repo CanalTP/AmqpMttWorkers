@@ -106,11 +106,7 @@ class Worker
 
                 if ($hash != $payload->pdfHash) {
                     $pdfGenerator = new PdfGenerator($this->curlProxy, $payload->pdfGeneratorUrl, false);
-                    if (!isset($payload->layoutParams->pageSize)) {
-                        $pdfPath = $pdfGenerator->getPdf($payload->url, $payload->layoutParams->orientation);
-                    } else {
-                        $pdfPath = $pdfGenerator->getPdf($payload->url, $payload->layoutParams->orientation, $payload->layoutParams->pageSize);
-                    }
+                    $pdfPath = $pdfGenerator->getPdf($payload->url, $payload->layoutParams->orientation, $payload->layoutParams->pageSize);
                     $filepath = $this->mediaBuilder->saveFile(
                         $pdfPath,
                         $payload->timetableParams->externalNetworkId,
